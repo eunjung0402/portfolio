@@ -8,7 +8,8 @@ $(function(){
     gsap.set('.stagger_text span',{yPercent:100})
     gsap.set('.gif_box .gif_motion_img',{opacity:0})
     gsap.set('.sc_about .text_box',{opacity:0,yPercent:20})
-    gsap.set('.sc_contact .text1',{xPercent:-50})
+    gsap.set('.sc_contact .text1',{xPercent:-100})
+    gsap.set('.sc_contact .text2',{xPercent:100})
 
 
 
@@ -226,7 +227,7 @@ $(function(){
     var aboutTexttMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_contact',
-            start:'0% 50%',
+            start:'-100% 0%',
             end:'100% 100%',
             //markers:true,
             scrub:true,
@@ -234,8 +235,9 @@ $(function(){
     })
 
     aboutTexttMotion
-    .addLabel('moveText')
-    .to('.sc_contact .text1',{xPercent:0},'moveText')
+    .addLabel('contactText')
+    .to('.sc_contact .text1',{xPercent:0},'contactText')
+    .to('.sc_contact .text2',{xPercent:-50},'contactText')
 
 
 

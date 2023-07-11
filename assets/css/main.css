@@ -316,9 +316,11 @@ section.sc_about {
     background: #fff;
     border-radius: 20px;
     color: #000;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: 600;
+    font-size: 1rem;
     transition: .2s;
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
 }
 .sc_work .work_item .link_box a:hover {
     background: #000;
@@ -390,5 +392,8 @@ section.sc_about {
     .sc_visual .gif_box.gif_4 {
         top: -100%;
         right: 0;
+    }
+    .sc_contact .dash .about_arrow {
+        display: none;
     }
 }

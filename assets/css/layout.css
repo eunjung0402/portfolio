@@ -246,6 +246,7 @@ footer > div {
 .sc_contact .group_move a {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 5vh;
 }
 .sc_contact .bg_radius_wrap {
     width: 100%;
@@ -310,14 +311,14 @@ footer > div {
     transition: 1s;
     width: 46px;
 }
-.sc_contact .group_move:hover .text {
+.sc_contact .group_move a:hover .text {
     opacity: 0.6;
 }
-.sc_contact .group_move:hover .dash::before {
+.sc_contact .group_move a:hover .dash::before {
     transition: 0.3s;
     opacity: 0;
 }
-.sc_contact .group_move:hover .about_arrow {
+.sc_contact .group_move a:hover .about_arrow {
     opacity: 1;
     transform: translate3d(50%, 0, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-40deg) skew(0deg, 0deg);
 }
@@ -434,6 +435,10 @@ footer .link_address {
     }
     header .info_area .character_box {
         top: 10%;
+    }
+    header .info_area .info_box p {
+        font-size: 1rem;
+        font-weight: 400;
     }
 }
 
