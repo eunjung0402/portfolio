@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: ivypresto-display;
+    src: url(../font/ivy.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Clashgrotesk;
+    src: url(../font/clash.ttf);
+}
+
+.blind{
+    position: absolute;   
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+body {
+    color: #000;
+    cursor: default;
+    font-family: 'Inter', sans-serif;
+    font-size: 1vw;
+    line-height: 20px;
+}
+
+.font_ivy {
+    z-index: 3;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 12.54em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: .9em;
+    position: relative;
+}
+.kr_text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+.font_absol_box {
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: exclusion;
+}
+.font_absol_box span {
+    color: #fff;
+}
+.font_clash {
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-family: 'Clashgrotesk', sans-serif;
+    font-size: 13.7em;
+    font-weight: 400;
+    line-height: .9em;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section h2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: inherit;
+    padding: 5rem 1rem;
+    font-size: 0.8em;
+}
+
+section h2 > span {
+    display: inline-flex;
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(0px, 70%, -90px) scale3d(1, 1, 1) rotateX(-92deg) rotateY(0deg) rotateZ(0deg) skew(3deg, -12deg);
+    transform-style: preserve-3d;
+}
+section.on h2 > span {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+}
+.sc_about h2 span,
+.sc_work h2 span {
+    color: #fff;
+}
