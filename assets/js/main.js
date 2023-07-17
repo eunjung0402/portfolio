@@ -14,7 +14,7 @@ $(function(){
 
 
 
-    var introMotion = gsap.timeline({
+    const introMotion = gsap.timeline({
         paused:true
     })
     introMotion
@@ -25,7 +25,7 @@ $(function(){
     $(document).ready(function(){
         introMotion.play()
     })
-    var headerslideMotion = gsap.timeline({
+    const headerslideMotion = gsap.timeline({
         paused:true
     })
     headerslideMotion
@@ -116,7 +116,7 @@ $(function(){
     })
 
     // 메인 비주얼 스크롤 움직임
-    var gifMotion = gsap.timeline({
+    const gifMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_visual',
             start:'0% 0%',
@@ -129,7 +129,7 @@ $(function(){
     gifMotion
     .to('.gif_box',{yPercent:-400})
 
-    var mainTextMotion = gsap.timeline({
+    const mainTextMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_visual',
             start:'30% 0%',
@@ -149,7 +149,7 @@ $(function(){
 
 
     // bg_black 일때 헤더 바꾸기
-    var aboutBgMotion = gsap.timeline({
+    const aboutBgWhMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_about',
             start:'-70% 0%',
@@ -159,7 +159,7 @@ $(function(){
         }
     })
 
-    aboutBgMotion
+    aboutBgWhMotion
     .to('header .header_item span',0.5,{"color":"#fff"})
 
 
@@ -174,7 +174,7 @@ $(function(){
 
 
      // about scrub text 모션
-    var aboutMotion = gsap.timeline({
+    const aboutMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.container',
             start:'25% 0%',
@@ -188,7 +188,7 @@ $(function(){
     .to('.sc_about .circle_area',{xPercent:-100})
     
     // about 모션
-    var abouttMotion = gsap.timeline({
+    const abouttMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_about',
             start:'0% 0%',
@@ -211,7 +211,7 @@ $(function(){
 
 
     // about circle 모션
-    var aboutCircleMotion = gsap.timeline({
+    const aboutCircleMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_contact',
             start:'0% 80%',
@@ -224,7 +224,7 @@ $(function(){
     aboutCircleMotion
     .to('.sc_contact .bg_radius_wrap',{yPercent:-60})
 
-    var aboutTexttMotion = gsap.timeline({
+    const aboutTexttMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_contact',
             start:'-100% 0%',
@@ -251,7 +251,7 @@ $(function(){
     })
 
     // bgwhite 일때 헤더 바꾸기
-    var aboutBgMotion = gsap.timeline({
+    const aboutBgBkMotion = gsap.timeline({
         scrollTrigger:{
             trigger: '.sc_contact',
             start:'0% 100%',
@@ -261,7 +261,7 @@ $(function(){
         }
     })
 
-    aboutBgMotion
+    aboutBgBkMotion
     .to('header .header_item span',0.5,{"color":"#000"})
 
 
